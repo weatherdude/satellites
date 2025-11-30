@@ -10,7 +10,7 @@ altitude = 75
 search_angle = 70
 category = 1 # brightest satellites
 sec = 1 # retrieve position for next x sec
-key = "24EQ7F-AZ2NCD-6T75V9-4VFZ"
+key = ""
 
 # define functions
 def coords_from_zenith_azimuth(rows,cols,zenith,azimuth):
@@ -89,3 +89,4 @@ img1.save("satellites_result.png")
 # k = cv2.waitKey(0) & 0xFF # hack to get cv2.imshow going
 # if k == 27:         # wait for ESC key to exit
 #     cv2.destroyAllWindows()
+
