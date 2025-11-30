@@ -33,14 +33,14 @@ def coords_from_zenith_azimuth(rows,cols,zenith,azimuth):
 
 
 # main part
-path = r'C:\Users\Admin\Documents\UFO\Satellites\sky_circle.png'
+path = r'\Documents\UFO\Satellites\sky_circle.png'
 
 image = cv2.imread(path, 1)
 rows,cols,channels = image.shape
 
 img1 = Image.open(path)
 
-path = r"C:\Users\Admin\Documents\UFO\Satellites\satellite_icon.png"
+path = r"\Documents\UFO\Satellites\satellite_icon.png"
 img2 = Image.open(path)
 
 # get satellites above location
@@ -89,4 +89,5 @@ img1.save("satellites_result.png")
 # k = cv2.waitKey(0) & 0xFF # hack to get cv2.imshow going
 # if k == 27:         # wait for ESC key to exit
 #     cv2.destroyAllWindows()
+
 
