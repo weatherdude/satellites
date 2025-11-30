@@ -8,7 +8,7 @@ lon = 10.522219
 altitude = 75
 search_angle = 70
 category = 1 # brightest satellites
-key = "24EQ7F-AZ2NCD-6T75V9-4VFZ"
+key = ""
 
 # get all current satellites above position
 url = "https://api.n2yo.com/rest/v1/satellite/above/"+str(lat)+"/"+str(lon)+"/"+str(altitude)+"/"+str(search_angle)+"/"+str(category)+"/&apiKey="+key+""
@@ -34,3 +34,4 @@ def sat_position(id,lat,lon,altitude,sec,key):
     data = requests.get(url)
     data = data.json()
     return data
+
